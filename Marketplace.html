@@ -9,8 +9,8 @@
     <title>Red Social</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/f8498a1bc4.js"></script>
-    </head>
+    <script src="https://kit.fontawesome.com/f8498a1bc4.js"></script>
+</head>
 
 <body>
     <div class="container-fluid">
@@ -23,28 +23,37 @@
                         RollingCode Network
                     </a>
                     <div class="mx-auto order-0">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fas fa-list"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="FormLoginNew.html">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Marketplace.html">Marketplace</a>
-                            </li>
-                        </ul>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="FormLoginNew.html">Register</a>
+                                </li>
+                                <li class="nav-item current">
+                                    <a class="nav-link" href="Marketplace.html">Marketplace</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    </div>
-                    <span class="navbar-text">
+                    <div class="navbar-text">
                         Benjamin Montero Torres
-                    </span>
+                    </div>
+                    <div class="buttons">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-list"></span>
+                        </button>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#categorySupportedContent" aria-controls="categorySupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fas fa-ellipsis-v"></span>
+
+                        </button>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -59,16 +68,16 @@
                     <h3>Categorias</h3>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                        <li>categoria 1</li>
+                        <li><button class="category-style btn-block">Vehiculos<i class="fas fa-car"></i></button></li>
                         </li>
                         <li class="nav-item">
-                        <li>categoria 2</li>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <li>categoria 3</li>
+                        <li><button class="category-style btn-block">Inmuebles<i class="fas fa-home"></i></button></li>
                         </li>
                         <li class="nav-item">
-                        <li>categoria 4</li>
+                        <li><button class="category-style btn-block">Electronica<i class="fas fa-mobile-alt"></i></button></li>
+                        </li>
+                        <li class="nav-item">
+                        <li><button class="category-style btn-block">Indumentaria<i class="fas fa-tshirt"></i></button></li>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +99,7 @@
                 </div>
                 <div class="products-list row ">
                     <div class="product-single col-sm-12 col-lg-4 d-flex justify-content-center ">
-                        <div class="card navbar-light bg-light" >
+                        <div class="card navbar-light bg-light">
                             <img src="img/producto.png" class="card-img-top" alt="...">
                             <div class="price-image ">
                                 <h3><strong>$111</strong></h3>
