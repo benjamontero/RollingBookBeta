@@ -3,15 +3,13 @@
 }
 .contenedor{
     padding: 0px !important;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .navbar-brand{
     margin: 0px !important;
     color: #2980b9 !important;
 }
-.navbar-text{
-    color: #2980b9 !important;
-}
+
 .banner{
     height: 70%;
     border-radius: 10px;
@@ -79,10 +77,13 @@ border-radius: 10px
     .collapse.dont-collapse-sm{
         display: block !important;
       }
-      .navbar-text{
-          text-align: center;
-      }
-   
+
+}
+@media (max-width: 768px) 
+{
+   .banner{
+       display: none;
+   }
 
 }
 /* css menu style */
