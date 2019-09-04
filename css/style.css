@@ -48,9 +48,7 @@ border-radius: 10px
 .products-list{
     margin: 0 auto;
 }
-.product-single{
-    padding: 15px;
-}
+
 .product-single .card{
     border: 1px solid black;
 }
@@ -193,3 +191,91 @@ border-radius: 10px
     transform: rotate(-20deg) scale(1.1);
   }
   /* end category effect */
+
+  .product-single {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+  }
+  .product-single * {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .product-single img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .product-single figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  .product-single h2,
+  .product-single h4 {
+    margin: 0;
+  }
+  .product-single h2 {
+    font-weight: 600;
+  }
+  .product-single h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .product-single i {
+    font-size: 32px;
+  }
+  .product-single:after {
+    background-color: #ffffff;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 0;
+  }
+  .product-single a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .product-single:hover figcaption,
+  .product-single.hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .product-single:hover:after,
+  .product-single.hover:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 0.9;
+  }
