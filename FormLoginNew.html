@@ -9,21 +9,21 @@
     <title>Red Social</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/f8498a1bc4.js"></script>
+    <script src="https://kit.fontawesome.com/f8498a1bc4.js"></script>
 
-    </head>
+</head>
 
 <body>
     <div class="container-fluid">
         <!-- Comienza Menu -->
         <div class="contenedor row justify-content-between">
-                <div class="contenedor col-12">
-                    <nav class="navbar navbar-expand-md navbar-light bg-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="img/icono.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                            RollingCode Network
-                        </a>
-                        <div class="mx-auto order-0">
+            <div class="contenedor col-12">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/icono.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        RollingCode Network
+                    </a>
+                    <div class="mx-auto order-0">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -42,47 +42,77 @@
                                 </li>
                             </ul>
                         </div>
-                        </div>
-                        <span class="navbar-text">
-                            Benjamin Montero Torres
-                        </span>
-                    </nav>
-                </div>
+                    </div>
+                    <span class="navbar-text">
+                        Benjamin Montero Torres
+                    </span>
+                </nav>
             </div>
-            <!-- Termina Menu -->
+        </div>
+        <!-- Termina Menu -->
         <!-- Comienza contenido -->
         <div class="contenido row justify-content-end ">
             <!-- Empieza Registro -->
+            <div class="col-md-8 col-sm-12 text-center">
+                <img class="login" src="img/imglogin2.jpg" alt="">
+            </div>
             <div class="register col-md-4 col-sm-12 text-center  navbar-light bg-light">
                 <div class="loginlogo"> <img src="img/icono.png" width="40%" alt=""></div>
                 <span>Login</span>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                            <input type="text" class="form-control" id="inputName" pattern="[A-Za-z]" placeholder="Nombre" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                            <input type="text" class="form-control" id="inputLastName" pattern="[A-Za-z]" placeholder="Apellido" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-8">
-                            <input type="date" class="form-control" id="inputLastName" placeholder="Apellido">
+                            <input type="date" class="form-control" id="inputLastName" placeholder="Fecha" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-secondary btn-lg btn-block">Registrate</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" type="submit" class="btn btn-secondary btn-lg btn-block" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Registrate
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> <h2>Bienvenido!</h2></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5> Su registro ha sido exitoso </h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"> <a
+                                            href="index.html" style="color:white">Ir a la pagina de inicio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
             <!-- Fin Registro -->
