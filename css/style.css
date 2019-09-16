@@ -282,3 +282,79 @@ border-radius: 10px
     transform: scaleY(1);
     opacity: 0.9;
   }
+/* WELCOME: posicionado del video */
+ .signup video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width:100%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  /* Welcome: rellenamos espacios con gris y situamos tamaño del vh  */
+  body .signup {
+    position: relative;
+    background-color: gray;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* WELCOME: indicamos que el form tendra que ir arriba del video */
+  body .container
+  {
+    position: relative;
+    z-index: 1;
+  }
+
+  .signup-content {
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    padding: 50px 85px; }
+
+  body .container {
+   width:500px;
+   position: relative;
+   margin: 0 auto; }
+
+   .form-group {
+    overflow: hidden;
+    margin-bottom: 20px; }
+  
+  .signup-content .form-input {
+    width: 100%;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;}
+
+  .signup-content .form-submit {
+    width: 100%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
